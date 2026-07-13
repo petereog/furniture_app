@@ -9,11 +9,7 @@ class BannerWidget extends StatelessWidget {
       padding: const EdgeInsets.all(20.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
-        gradient: const LinearGradient(
-          colors: [Color(0xFF3C5A5D), Color(0xFF6A8A8D)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: const Color(0xFFEEEEEE),
       ),
       child: Row(
         children: [
@@ -22,22 +18,25 @@ class BannerWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
-                  'New Season',
+                  'New Collection',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 SizedBox(height: 8.0),
                 Text(
-                  'Discover elegant furniture for your dream home.',
+                  'Discover 50% off on our new arrivals',
                   style: TextStyle(
-                    color: Colors.white70,
+                    color: Color.fromARGB(179, 0, 0, 0),
                     fontSize: 13,
                   ),
                 ),
-              ],
+                SizedBox(height: 12.0),
+              
+              
+                            ],
             ),
           ),
           const SizedBox(width: 12.0),
@@ -47,12 +46,8 @@ class BannerWidget extends StatelessWidget {
               color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(14.0),
             ),
-            child: const Icon(
-              Icons.chair_alt,
-              color: Colors.white,
-              size: 28,
-            ),
-          ),
+            child: Image.asset('assets/images/image 1.png',
+            ),          ),
         ],
       ),
     );
