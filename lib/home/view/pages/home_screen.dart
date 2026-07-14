@@ -53,6 +53,22 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24.0),
             const BannerWidget(),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Categories',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('See All'),
+                ),
+              ],
+            ),
            
             const SizedBox(height: 16.0),
           ],
