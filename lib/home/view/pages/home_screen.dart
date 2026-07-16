@@ -58,6 +58,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 24.0),
+                // banner 
                 const BannerWidget(),
                 const SizedBox(height: 10.0),
                 Row(
@@ -77,9 +78,12 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 16.0),
+                // categories
                 const CategoriesWidget(),
+
                 const SizedBox(height: 24.0),
-                const FlashSalesWidget(),
+                // flash 
+              const FlashSalesWidget(),
                 const SizedBox(height: 24.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
