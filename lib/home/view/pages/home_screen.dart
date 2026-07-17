@@ -5,6 +5,9 @@ import 'package:furniture_app/home/view/widget/searchbar_widget.dart';
 import 'package:furniture_app/home/view/widget/banner.dart';
 import 'package:furniture_app/home/view/widget/categories_widget.dart';
 import 'package:furniture_app/navigation/bottom_navigation.dart';
+import 'package:furniture_app/product_detail/product_details.dart';
+import 'package:get/get.dart';
+
 
 
 class HomeScreen extends StatelessWidget {
@@ -149,7 +152,11 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Container(
+                    GestureDetector(
+                     onTap:  () {
+                      Get.to(() => const ProductDetails());
+                     },
+                      child: Container(
                       height: 185,
                       width: 155,
                       padding: const EdgeInsets.all(8),
@@ -210,6 +217,8 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
+                    ),
+                   
                   ],
                 ),
                 const SizedBox(height: 100.0),
