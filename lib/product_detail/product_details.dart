@@ -20,16 +20,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                 Row(
                   children: [
                     Container( 
-                      height:36 ,
-                      width: 36,
+                      height:46 ,
+                      width: 46,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
                         color: const Color.fromARGB(255, 255, 255, 255),
-
                       ),
                       child: Icon(Icons.arrow_back_ios_sharp,
-                    )
-                    )
+                    ),
+                    ),
+                    const Text('Product Details', style: TextStyle(fontWeight: .bold, fontSize: 22,),)
                     ]
                 )
               ]
