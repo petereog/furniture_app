@@ -19,9 +19,16 @@ class _ProductDetailsState extends State<ProductDetails> {
               children: [
                 Row(
                   children: [
-          
-                    const SizedBox(width: 12.0),
-                    Container(
+                    Container( 
+                      height:36 ,
+                      width: 36,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40),
+                        color: const Color.fromARGB(255, 255, 255, 255),
+
+                      ),
+                      child: Icon(Icons.arrow_back_ios_sharp,
+                    )
                     )
                     ]
                 )
